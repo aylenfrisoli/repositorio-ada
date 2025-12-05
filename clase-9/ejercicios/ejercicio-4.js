@@ -11,6 +11,5 @@ if (nombreUsuario === miNombre) {
   console.log("WOW! Tenemos el mismo nombre!");
 } else {
   console.log(
-    `Nuestros nombres son diferentes, tu nombre es: ${nombreUsuario} y mi nombre es: ${miNombre}`
-  );
+    "Nuestros nombres son diferentes, tu nombre es: " + nombreUsuario + " y mi nombre es: " + miNombre);
 }

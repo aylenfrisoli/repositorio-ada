@@ -5,7 +5,7 @@ const prompt = require("prompt-sync")();
 // correspondiente. Si el número no está dentro de ese rango, muestra un mensaje
 // de error.
 
-let numeroDelUsuario = parseFloat(prompt("Ingresa un número:"));
+let numeroDelUsuario = parseInt(prompt("Ingresa un número del 1 al 7: "));
 
 if (numeroDelUsuario === 1) {
   console.log("Es Lunes");
