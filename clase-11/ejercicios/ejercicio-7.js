@@ -7,7 +7,7 @@ const prompt = require("prompt-sync")();
 let numeroUno = parseInt(prompt("Ingresá un número: "));
 let numeroDos = parseInt(prompt("Ingresá otro número: "));
 
-let operacion = prompt("Ingresa una operación matemática (ej: suma, resta, multiplicación, división): ")
+let operacion = prompt("Ingresa una operación matemática (ej: suma, resta, multiplicación, división): ").toLowerCase();
 
 
 switch (operacion) {

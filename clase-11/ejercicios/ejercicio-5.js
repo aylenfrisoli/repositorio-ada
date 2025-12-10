@@ -8,14 +8,12 @@ const prompt = require("prompt-sync")();
 let numeroInicio = parseInt(prompt("Ingresá un número: "));
 let numeroFin = parseInt(prompt("Ingresá otro número: "));
 
-if (numeroInicio > numeroFin) {
-  console.log("Error: El número de inicio no puede ser mayor que el número final.");
-} 
-else {
-  for (let n = numeroInicio; n <= numeroFin; n++) {
-    if (n % 2 === 0) {
-      console.log(n);
+if (numeroInicio < numeroFin) {
+  for (let numero = numeroInicio; numero <= numeroFin; numero++)
+    if (numero % 2 === 0) {
+      console.log(numero);
     }
-  }
+} else {
+  console.log("Error: El número de inicio no puede ser mayor que el número final.");
 }
-//ke dificil 
+//ke dificil
