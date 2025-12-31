@@ -8,7 +8,7 @@ console.log("------Conviertiendo grados Celsius en Fahrenheit------");
 
 let temperaturaIngresada = parseFloat(prompt("Ingresá una temperatura: "));
 
-let convertirCelsiusAFahrenheit = function() {
-    return (temperaturaIngresada * 9/5) + 32;
+let convertirCelsiusAFahrenheit = function(grados) {
+    return (grados * 9/5) + 32;
 }
-console.log("La temperatura en Fahrenheit es: " + convertirCelsiusAFahrenheit());
+console.log("La temperatura en Fahrenheit es: " + convertirCelsiusAFahrenheit(temperaturaIngresada));

@@ -8,8 +8,8 @@ console.log("-----Convirtiendo número de horas en minutos-----")
 
 let horaIngresada =parseFloat(prompt("Ingresa una cantidad de horas: "));
 
-function convertirHorasAMinutos() {
-    return horaIngresada * 60;
+function convertirHorasAMinutos(horas) {
+    return horas * 60;
 }
 
-console.log(horaIngresada + " horas equivale a " + convertirHorasAMinutos() + " minutos");
+console.log(horaIngresada + " horas equivale a " + convertirHorasAMinutos(horaIngresada) + " minutos");

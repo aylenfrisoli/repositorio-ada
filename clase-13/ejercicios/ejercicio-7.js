@@ -8,16 +8,15 @@
 const prompt = require("prompt-sync")();
 
 let horaActual = parseFloat(prompt("Qué hora es?: "));
-let saludo;
 
-function mostrarSaludo() {
-    if (horaActual <= 12) {
-    saludo = "Buenos días";
-    } else if (horaActual >= 12 && horaActual <= 18) {
-    saludo = "Buenas tardes";
-    } else {
-    saludo = "Buenas noches";
+function mostrarSaludo(hora) {
+    if (hora <= 12) {
+        return "Buenos días";
+    } else if (hora >= 12 && hora <= 18) {
+        return "Buenas tardes";
     }
-    return saludo;
+    
+    return "Buenas noches";
 }
-console.log(mostrarSaludo());
+
+console.log(mostrarSaludo(horaActual));
