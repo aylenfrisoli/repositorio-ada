@@ -12,4 +12,4 @@ function convertirHorasAMinutos() {
     return horaIngresada * 60;
 }
 
-console.log(horaIngresada + " horas son " + convertirHorasAMinutos() + " minutos");
+console.log(horaIngresada + " horas equivale a " + convertirHorasAMinutos() + " minutos");
